@@ -1,0 +1,427 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+  }
+  
+  html {
+    font-size: 62.5%;
+  }
+  
+  html,
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #CDD2E5;
+    height: 100vh;
+  }
+  
+  body {
+    font-size: 1.6rem;
+  } 
+
+  /*  HEADER DO SITE GF CONSTRUÇÕES   */
+
+  header{
+    width: 100%;
+  }
+
+  .nav{
+    width: 100%;
+    background-color: #1A1C43;
+    padding: 10px 100px;
+    display: flex;
+    position: fixed;
+    top: 0;
+    border-bottom: 1px solid black;
+    z-index: 100;
+  }
+
+  .midia{
+    width: 30%;
+    display: flex;
+  }
+
+  .midia a{
+    color: white;
+    font-size: 2.4rem;
+    display: flex;
+    margin: 0 5rem 0 0;
+  }
+
+  .midia a:hover{
+    color: #7A714F;
+    transition: 0.3s;
+  }
+
+  .menu{
+    width: 70%;
+  }
+
+  .menu ul{
+    list-style: none;
+    text-align: right;
+    width: 100%;
+  }
+
+  .menu ul li{
+    display: inline;
+    margin: 0 0 0 60px;
+  }
+
+  .menu ul a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .menu ul a:hover{
+    color: #7A714F;
+    border-bottom: 1px solid #7A714F;
+    transition: 0.3s;
+  }
+
+  .init{
+    width: 100%;
+    margin-top: 4rem;
+    display: flex;
+    box-shadow: -1px 7px 25px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -1px 7px 25px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 7px 25px 0px rgba(0,0,0,0.75);
+    position: relative;
+  }
+
+  .film{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0,0,0,0.45);
+    right: 0;
+  }
+
+  .img_box{
+    width: 100%;
+    height: 644px;
+  }
+
+  .init .img_box img{
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid black;
+    position: absolute;
+    object-fit: cover;
+    transition: opacity 800ms;
+    opacity: 0;
+  }
+
+ .img_box img.selected{
+    opacity: 1;
+  }
+
+  .box{
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    padding: 8rem 1%;
+    text-align: center;
+    z-index: 10;
+  }
+
+  .box img{
+    width: 18rem;
+  }
+
+  .box h2{
+    color: white;
+    margin-top: 8rem;
+    font-size: 1.8rem;
+  }
+
+  .box button{
+    padding: 10px 5%;
+    background-color: #3E75C8;
+    margin-top: 8rem;
+    border: 0;
+    cursor: pointer;
+  }
+
+  .box button:hover{
+    background-color: #7A714F;
+    transition: 0.3s;
+  }
+
+  .box button a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+  }
+
+  .box p{
+    color: white;
+    font-style: italic;
+    font-size: 1.5rem;
+    margin-top: 8rem;
+  }
+
+  /*  MAIN DO SITE GF CONSTRUÇÕES   */
+
+  main{
+    width: 100%;
+  }
+
+  .hello{
+    width: 100%;
+    padding: 100px 15%;
+    display: flex;
+  }
+
+  .hello h2{
+    color: #7A714F;
+    font-size: 2.5rem;
+  }
+
+  .hello p{
+    font-weight: bold;
+    font-size: 1.8rem;
+    padding-left: 10px;
+    margin-top: 7px;
+  }
+
+  .hello iconify-icon{
+    font-size: 130px;
+    padding-left: 100px;
+  }
+
+/*  SERVIÇOS DO SITE GF CONSTRUÇÕS  */
+
+.services{
+  width: 100%;
+  background-color: #1A1C43;
+}
+
+.single{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 2%;
+}
+
+.box_single{
+  background-color: white;
+  padding: 2%;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  box-shadow: 10px 10px 39px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 10px 10px 39px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 39px 0px rgba(0,0,0,0.75);
+}
+
+.box_single div{
+  border: 1px solid black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+}
+
+.box_single div iconify-icon{
+  font-size: 5rem;
+}
+
+.box_single p{
+  font-weight: bolder;
+  text-align: center;
+  margin-top: 30px;
+  color: #7A714F;
+}
+
+.close{
+  width: 100%;
+  padding: 2% 3%;
+  display: flex;
+}
+
+.img_close{
+  width: 50%;
+  position: relative;
+}
+
+.img_close img{
+  width: 100%;
+  position: absolute;
+  box-shadow: 10px 10px 39px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 10px 10px 39px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 39px 0px rgba(0,0,0,0.75);
+  border: 1px solid black;
+  opacity: 0;
+  transition: opacity 800ms;
+}
+
+.img_close img.selected{
+  opacity: 1;
+}
+
+.about{
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.about ul{
+  margin: 0 auto;
+  color: white;
+  font-weight: bolder;
+}
+
+.about ul li{
+  margin: 50px auto;
+}
+
+.about div{
+  width: 100%;
+  text-align: center;
+}
+
+.about button{
+  padding: 10px 5%;
+  background-color: #3E75C8;
+  margin: 40px auto;
+  border: 0;
+  cursor: pointer;
+}
+
+.about button:hover{
+  background-color: #7A714F;
+  transition: 0.3s;
+}
+
+.about button a{
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.plus{
+  width: 100%;
+  margin-top: 50px;
+  padding: 100px 15%;
+  display: flex;
+}
+
+.plus h2{
+  color: #7A714F;
+  font-size: 2.5rem;
+}
+
+.plus p{
+  font-weight: bold;
+  font-size: 1.8rem;
+  padding-left: 10px;
+  margin-top: 7px;
+}
+
+.plus iconify-icon{
+  font-size: 130px;
+  padding-left: 100px;
+}
+
+.carousel{
+  width: 100%;
+  height: 220px;
+  display: flex;
+  justify-content: center;
+}
+
+.carousel img{
+  height: 100%;
+  box-shadow: 10px 10px 39px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 10px 10px 39px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 39px 0px rgba(0,0,0,0.75);
+  border: 1px solid black;
+  margin: 0 auto;
+}
+
+/*  footer do site gf construções   */
+
+footer{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #1A1C43;
+  margin-top: 100px;
+  padding-top: 50px;
+  align-items: center;
+}
+
+.info{
+  width: 30%;
+  border-right: 1px solid white;
+  text-align: center;
+}
+
+.info img{
+  width: 18rem;
+  
+}
+
+.info p{
+  color: white;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1.5rem;
+  margin-top: 30px;
+}
+
+.contact{
+  width: 70%;
+  text-align: center;
+  color: white;
+  margin-top: -50px;
+}
+
+.contact div{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.contact iconify-icon{
+  font-size: 2.4rem;
+  margin-right: 10px;
+}
+
+.contact p{
+  font-weight: bolder;
+  font-style: italic;
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+
+.developer{
+  width: 100%;
+  padding: 25px 2%;
+  background-color: black;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.developer p{
+  color: white;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.developer a{
+  color: #E0CA78;
+}

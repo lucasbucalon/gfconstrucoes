@@ -1,0 +1,262 @@
+@media screen and (max-width: 1024px){
+
+    html{
+        font-size: 50%;
+    }
+
+    .nav{
+        padding: 10px 0 15px 0;
+        display: flex;
+        flex-direction: column;
+      }
+
+    .midia{
+        padding-left: 15px;
+      }
+
+    .menu{
+        width: 100%;
+      }
+
+    .menu ul{
+        display: none;
+    }
+
+    .menu_toggle{
+        width: 40px;
+        cursor: pointer;
+        position: absolute;
+        right: 5%;
+        top: 5%;
+    }
+
+    .menu_toggle .one,
+    .two,
+    .three {
+        background-color: white;
+        height: 5px;
+        width: 40px;
+        margin: 6px auto;
+        transition-duration: 0.3s;
+    }
+
+    .menu.on {
+        position: relative;    
+        max-width: 100vw;
+        height: 100vh;
+        background-color: #1A1C43;
+        z-index: 10;
+    }
+
+    .menu.on ul {
+        width: 100%;
+        display: flex;
+        text-align: center;
+        flex-wrap: wrap;
+        margin-top: 40px;
+    }
+
+    .menu.on ul li {
+        width: 100%;
+        margin: 15px 0;
+        padding-bottom: 5px;
+        border-bottom: 1px solid white;
+    }
+
+    .menu.on ul li a{
+        margin-left: 0px;
+    }
+
+    .menu.on .menu_toggle {
+        position: absolute;
+        right: 5%;
+        top: -20px;
+    }
+
+    .menu.on .menu_toggle .one {
+        transform: rotate(45deg) translate(7px, 7px);
+        background-color: white;
+    }
+
+    .menu.on .menu_toggle .two {
+        opacity: 0;
+    }
+
+    .menu.on .menu_toggle .three {
+        transform: rotate(-45deg) translate(8px, -9px);
+        background-color: white;
+    }
+
+    .img_box{
+        height: 550px;
+      }
+
+    .single{
+        flex-wrap: wrap;
+    }
+    
+    .box_single{
+       margin: 2% 30px;
+    }
+
+    .plus{
+        margin-top: 0px;
+    }
+
+    .carousel{
+        flex-wrap: wrap;
+        padding: 0 2%;
+    }
+    
+    .carousel img{
+        margin: 2% 30px;
+    }
+
+    footer{
+        margin-top: 380px;
+    }
+}
+
+@media screen and (max-width: 926px){
+    .img_box{
+        height: 480px;
+      }
+
+    .hello{
+        padding: 100px 5%;
+    }
+
+    .about ul{
+        margin: 0 0 0 70px;
+    }
+
+    .plus{
+        padding: 100px 5%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .box{
+        width: 100%;
+        padding: 8rem 5%;
+    }
+    
+    .single{
+        padding: 2%;
+
+        flex-wrap: wrap;
+    }
+      
+    .box_single{
+        padding: 0 50px 0 0;
+        width: 300px;
+        height: 100px;
+        margin: 2%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+      
+    .box_single div{
+        width: 80px;
+        height: 80px;
+    }
+      
+    .box_single p{
+        margin-top: 0px;
+    }  
+
+    .close{
+        padding: 2% 5%;
+        flex-direction: column;
+    }
+      
+    .img_close{
+        width: 100%;
+        position: relative;
+    }
+      
+    .about{
+        width: 100%;
+        margin-top: 520px;
+    }
+      
+    .about ul{
+        width: 100%;
+        display: flex;
+        margin: 0;
+    }
+      
+    .about ul li{
+        margin: 30px auto;
+    }
+}
+
+@media screen and (max-width: 640px){
+    .hello iconify-icon{
+        display: none;
+    }
+
+    .close{
+        margin-top: 30px;
+    }
+
+    .about{
+        margin-top: 450px;
+    }
+
+    .plus iconify-icon{
+        display: none;
+    }
+
+    footer{
+        margin-top: 850px;
+        justify-content: center;
+      }
+      
+      .info{
+        width: 95%;
+        border-right: none;
+        border-bottom: 1px solid white;
+        padding: 0 0 50px 0;
+      }
+      
+      .contact{
+        width: 100%;
+        margin-top: 50px;
+      }
+      
+      .contact div{
+        flex-wrap: wrap;
+        margin-top: 30px;
+      }
+      
+      .contact p{
+        margin: 0 0 20px 0;
+        width: 100%;
+        justify-content: center;
+      }
+}
+
+@media screen and (max-width: 480px){
+    .about{
+        margin-top: 350px;
+    }
+}
+
+@media screen and (max-width: 390px){
+    .about{
+        margin-top: 280px;
+    }
+      
+    .about ul{
+        flex-wrap: wrap;
+        width: 50%;
+        padding-left: 6%;
+    }
+      
+    .about ul li{
+        margin: 20px auto;
+        width: 100%;
+    }
+}
